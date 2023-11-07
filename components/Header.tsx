@@ -74,8 +74,10 @@ function Header ({ placeholder }:any)  {
           placeholder= {placeholder ||"Start Your Search"}
           onChange={(e) => setSearchInput(e.target.value)}
         />
-        <FaSearch className="hidden md:inline-flex h-8 p-2 text-white bg-red-400 rounded-full cursor-pointer md:mx-2" />
-      </div>
+        <div className="hidden md:inline-flex h-8 p-2 text-red-400 bg-white rounded-full cursor-pointer md:mx-2" onClick={search}>
+    <FaSearch  />
+  </div>
+</div>
       {/* Right */}
       <div className="flex items-center justify-end space-x-4 text-gray-500">
         <p className="hidden md:inline-block">Become a host</p>
