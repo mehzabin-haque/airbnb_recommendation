@@ -3,9 +3,13 @@ import { Inter } from 'next/font/google'
 import Header from '@/components/Header'
 import Banner from '@/components/Banner'
 import { dummyData } from './api/exploreData'
+import { cardData } from './api/cardData'
 import SmallCard from '@/components/SmallCard'
+import MediumCard from '@/components/MediumCard'
+import LargeCard from '@/components/LargeCard'
+import Footer from '@/components/Footer'
 
-export default function Home({ exploreData }: any) {
+export default function Home() {
   return (
     <>
       <div className=''>
@@ -25,7 +29,23 @@ export default function Home({ exploreData }: any) {
               ))}
             </div>
           </section>
+
+          <section className='pt-6'>
+            <h2 className='text-4xl font-semibold py-8'>Live Anywhere</h2>
+            {/* pull some data from a server - API endpoints */}
+
+            <div className='flex space-x-5 overflow-scroll scrollbar-hide p-4 -ml-3'>
+              {cardData.map((item, index) => (
+
+                <MediumCard key={item.img} img={item.img} title={item.title} />
+
+              ))}
+            </div>
+          </section>
+
+          <LargeCard img='/large.webp' title='The Greatest Outdoors' desc='Wishlists curated by Airbnb.' btnTxt='Get Inspired' />
         </main>
+        <Footer />
       </div>
     </>
   )
