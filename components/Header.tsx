@@ -16,11 +16,11 @@ const Header = (props: Props) => {
             <div className='relative flex items-center h-10 
             cursor-pointer my-auto'>
                 <Image src="/airbnb-logo.png" alt="logo" 
-                height={50}  width={50} objectFit='contain' objectPosition='left' />
+                fill objectFit='contain' objectPosition='left' />
             </div>
             {/* search */}
             <div className='flex items-center 
-            md:border-2 rounded-full py-2 md:shadow-sm'>
+            md:border-2 rounded-full border-gray-300 py-2 md:shadow-sm'>
                 <input className='flex-grow pl-5 
                 bg-transparent outline-none 
                 text-sm text-gray-600
