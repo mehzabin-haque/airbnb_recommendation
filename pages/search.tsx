@@ -3,8 +3,9 @@ import { useRouter } from "next/router";
 import Head from "next/head";
 import Header from "../components/Header";
 import InfoCard from "../components/InfoCard";
-import MapGL from "../components/MapGL";
+import Map from "../components/Map";
 import { hotelData } from "./api/hotleData";
+
 interface SearchProps {
   searchResults: {
     img: string;
@@ -97,8 +98,8 @@ function Search ({ searchResults }:any) {
             )}
           </div>
         </section>
-        <section className="hidden lg:inline-flex min-w-[600px]">
-          {/* <MapGL searchResults={searchResults} /> */}
+        <section className="hidden xl:inline-flex xl:min-w-[600px]">
+          <Map />
         </section>
       </main>
     </>

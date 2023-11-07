@@ -8,7 +8,7 @@ import SmallCard from '@/components/SmallCard'
 import MediumCard from '@/components/MediumCard'
 import LargeCard from '@/components/LargeCard'
 import Footer from '@/components/Footer'
-
+ //add progress bar
 export default function Home() {
   return (
     <>
