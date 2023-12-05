@@ -64,7 +64,34 @@ def test_make_api_call():
     assert isinstance(recommended_listings, pd.DataFrame)
     assert selection.shape == (1, 2)
     assert recommended_listings.shape == (5, 2)
-
-
     
+    def test_get_recommendations():
+        # Assuming `get_recommendations` function retrieves recommendations
+    # Set up dummy data for testing
+    # Create a DataFrame resembling sd_pp and selected_listing_df with dummy values
+    dummy_sd_pp = ...  # Create a DataFrame similar to sd_pp
+    dummy_selected_listing_df = ...  # Create a DataFrame similar to selected_listing_df
+
+    # Test the function
+    selection, recommended_listings = get_recommendations(dummy_sd_pp, dummy_selected_listing_df)
+    
+    # Assert the types or structure of the returned values
+    assert isinstance(selection, pd.DataFrame)
+    assert isinstance(recommended_listings, pd.DataFrame)
+    # Add more specific assertions based on expected behavior
+
+def test_get_simplified_recommendations():
+    # Assuming `get_simplified_recommendations` function provides recommendations based on user inputs
+    # Set up dummy data for testing
+    # Create a DataFrame resembling sd_simplified and user_inputs with dummy values
+    dummy_sd_simplified = ...  # Create a DataFrame similar to sd_simplified
+    dummy_user_inputs = ...  # Create a DataFrame similar to user_inputs
+
+    # Test the function
+    recommended_listings = get_simplified_recommendations(dummy_sd_simplified, dummy_user_inputs)
+    
+    # Assert the type or structure of the returned value
+    assert isinstance(recommended_listings, pd.DataFrame)
+    # Add more specific assertions based on expected behavior
+
 
