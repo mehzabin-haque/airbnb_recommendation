@@ -8,5 +8,45 @@ def test_make_api_call():
     assert response is not None
     assert 'document_id' in response
     assert 'document_title' in response
-    # Add more assertions based on the expected API response
+    assert 'document_description' in response
+    assert 'document_keywords' in response
+    assert 'document_url' in response
+    assert 'document_image' in response
+    assert 'document_language' in response
+    assert 'document_type' in response
+    assert 'document_created_at' in response
+    assert 'document_updated_at' in response
+    assert 'document_published_at' in response
+    assert 'document_author' in response
+    assert 'document_publisher' in response
+    assert 'document_contributor' in response
+    assert 'document_rating' in response
+    assert 'document_rating_count' in response
+    assert 'document_rating_average' in response
+    assert 'document_rating_percentage' in response
+    assert 'document_read_count' in response
+    assert 'document_word_count' in response
+    assert 'document_page_count' in response
+    assert 'document_duration' in response
+    assert 'document_file_size' in response
+    assert 'document_file_format' in response
+    assert 'document_file_extension' in response
+    assert 'document_file_name' in response
+    assert 'document_file_path' in response
+    assert 'document_file_url' in response
+    assert 'document_file_thumbnail' in response
+    assert 'document_file_content' in response
+    assert 'document_file_content_type' in response
+    assert 'document_file_content_language' in response
+    assert 'document_file_content_encoding' in response
+    assert 'document_file_content_size' in response
+    assert 'document_file_content_hash' in response
+    assert 'document_file_content_text' in response
+    assert 'document_file_content_data' in response
+    assert 'document_file_content_html' in response
+    assert 'document_file_content_pdf' in response
+    assert 'document_file_content_md' in response
+    assert 'document_file_content_doc' in response
+    assert 'document_file_content_docx' in response
+    
 
