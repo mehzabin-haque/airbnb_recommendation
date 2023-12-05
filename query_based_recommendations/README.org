@@ -1,0 +1,21 @@
+* About
+** Doc2Vec Approach
+We will do it for English. We will have a dataset with reviews. User will give input and we will find the corresponding restaurant for them.
+
+Input data: (Description, HotelID)
+Output data: Hotel ID
+process: Doc2Vec to find similar document
+
+What are we training? A Doc2Vec model.
+** Clustering Approach
+We will cluster the hotels into three categories based on their reviews - Elite, Medium, Low cost. Then we will do classification based on review given.
+
+Input: Description, Category
+Output: Category
+Process: Classifier
+
+** Multimodal approach
+
+Clustering to find approximate one + Doc2Vec to find exact one
+* Dataset
+[[https://github.com/eric8395/airbnb_recommendations/blob/main/notebooks/data/Joshua_Tree_Airbnb_Raw.csv][We are using this Joshua Tree AirBnB Raw dataset.]]
